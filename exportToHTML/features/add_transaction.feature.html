@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>add_transaction.feature</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #0033b3;}
+.s1 { color: #080808;}
+.s2 { color: #080808;}
+.s3 { color: #297bde;}
+.s4 { color: #8c8c8c; font-style: italic;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+add_transaction.feature</font>
+</center></td></tr></table>
+<pre><span class="s0">Feature</span><span class="s1">: </span><span class="s2">Add transaction</span>
+
+
+  <span class="s0">Scenario</span><span class="s1">: </span><span class="s2">Add new transaction</span>
+
+
+    <span class="s0">Given </span><span class="s2">Juan ingresa a la aplicacion</span>
+      <span class="s0">| </span><span class="s3">user </span><span class="s0">| </span><span class="s3">pass </span><span class="s0">|</span>
+    <span class="s0">When </span><span class="s2">Juan introduce la informacion requerida para la nueva transaccion</span>
+      <span class="s0">| </span><span class="s3">12-122025 </span><span class="s0">| </span><span class="s3">500 </span><span class="s0">| </span><span class="s3">testing </span><span class="s0">|</span>
+    <span class="s0">Then </span><span class="s2">Juan deberia ver una nueva transaccion con los detalles correcto</span>
+
+  <span class="s4">#Shoul see a new transaction in the transaction list with corret details </span></pre>
+</body>
+</html>

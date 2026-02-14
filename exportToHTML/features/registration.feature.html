@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>registration.feature</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #0033b3;}
+.s1 { color: #080808;}
+.s2 { color: #080808;}
+.s3 { color: #297bde;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+registration.feature</font>
+</center></td></tr></table>
+<pre><span class="s0">Feature</span><span class="s1">: </span><span class="s2">Registration</span>
+
+  <span class="s0">Scenario Outline</span><span class="s1">: </span><span class="s2">successful registration</span>
+
+    <span class="s0">Given </span><span class="s2">Juan wants to sign up in the application</span>
+    <span class="s0">When  </span><span class="s2">Juan step sends the required information to sing up</span>
+
+      <span class="s0">| </span><span class="s3">&lt;name&gt; </span><span class="s0">| </span><span class="s3">&lt;Last name&gt; </span><span class="s0">| </span><span class="s3">&lt;age&gt; </span><span class="s0">| </span><span class="s3">&lt;email&gt; </span><span class="s0">| </span><span class="s3">&lt;country&gt; </span><span class="s0">|</span>
+    <span class="s0">Then  </span><span class="s2">Juan should have a new accont created</span>
+
+    <span class="s0">Examples</span><span class="s1">:</span>
+
+      <span class="s0">| </span><span class="s3">name   </span><span class="s0">| </span><span class="s3">Last name </span><span class="s0">| </span><span class="s3">age </span><span class="s0">| </span><span class="s3">email       </span><span class="s0">| </span><span class="s3">country  </span><span class="s0">|</span>
+      <span class="s0">| </span><span class="s3">Andres </span><span class="s0">| </span><span class="s3">Morales   </span><span class="s0">| </span><span class="s3">28  </span><span class="s0">| </span><span class="s3">example@123 </span><span class="s0">| </span><span class="s3">Colombia </span><span class="s0">|</span>
+      <span class="s0">| </span><span class="s3">Julian </span><span class="s0">| </span><span class="s3">Perea     </span><span class="s0">| </span><span class="s3">15  </span><span class="s0">| </span><span class="s3">perea@123   </span><span class="s0">| </span><span class="s3">Colombia </span><span class="s0">|</span>
+
+
+  <span class="s0">Scenario</span><span class="s1">: </span><span class="s2">Missing requiered fields for registration</span>
+
+    <span class="s0">Given </span><span class="s2">Juan wants to sign up in the application</span>
+    <span class="s0">When </span><span class="s2">Juan does not dent the required information</span>
+    <span class="s0">Then </span><span class="s2">Juan should be told all fields are requiered</span>
+
+
+
+</pre>
+</body>
+</html>
